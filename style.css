@@ -1,0 +1,148 @@
+/*Colors
+0C2D57 - dark blue
+FC6736 - orange
+EFECEC - light gray
+96E9C6 - light green
+*/
+
+
+/*Fonts*/
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+/*Universal Styles*/
+html {
+    font-size: 16px;
+}
+
+* {
+    font-family: 'roboto-medium', 'Arial';
+    color: #96E9C6;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    background-color: #0C2D57;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    display: block;
+}
+
+/*Header*/
+header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+    line-height: 5rem;
+}
+
+#nametag {
+    float: left;
+    margin: auto 0;
+    height: 5rem;
+}
+
+#nametag h1 {
+    margin: auto 0;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    margin: auto 0;
+    padding: 0 2rem;
+}
+
+nav li {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+/* add later?
+nav li:not(:last-child)::after {
+    content: " |";
+} */
+
+/* About Me */
