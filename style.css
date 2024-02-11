@@ -82,24 +82,42 @@ EFECEC - light gray
 /*Universal Styles*/
 html {
     font-size: 16px;
+    height: 100%;
 }
 
 * {
     font-family: 'roboto-medium', 'Arial';
-    color: #96E9C6;
+    color: #EFECEC;
 }
 
 body {
     margin: 0;
-    padding: 2rem;
-    width: 100%;
-    background-color: #0C2D57;
+    padding: 5% 0 0 5%;
+    background: linear-gradient(90deg, #0C2D57 75%, #FC6736 25%);
+    min-height: 100%;
+    position: relative;
+}
+
+main {
+  padding-bottom: 2.5rem;
 }
 
 h1 {
     font-weight: bold;
     font-size: 3rem;
     display: block;
+}
+
+#about-me, #projects, #skills, #contact-link, footer {
+  width: 70%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 800;
 }
 
 /*Header*/
@@ -146,3 +164,21 @@ nav li:not(:last-child)::after {
 } */
 
 /* About Me */
+
+/* Projects */
+
+/* Skills */
+
+/* Contact Link */
+
+/* Footer */
+footer {
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  height: 2.5rem;
+}
+
+footer p{
+  font-weight: 600;
+}
