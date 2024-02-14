@@ -109,34 +109,35 @@ h1 {
 }
 
 .period {
-  color: #FDE767;
+  color: #ffd000;
 }
 
 #about-me, #projects, #skills, #contact-link, footer {
   width: 70%;
 }
 
-a {
+a, .collapsible {
   text-decoration: none;
   position: relative;
+  padding-bottom: 0.2rem;
 }
 
 .in-text-link {
   font-weight: 600;
 }
 
-a::before {
+a::before, .collapsible::before {
   content: "";
   position: absolute;
   bottom: 0;
   width: 0%;
   height: 0.2rem;
-  background: #FDE767;
+  background: #ffd000;
   transition: 0.2s;
   left: 0;
 }
 
-a:hover:before {
+a:hover:before, .collapsible:hover:before{
   width: 100%;
 }
 
@@ -189,11 +190,11 @@ nav li {
   background-color: #fff;
   border: none;
   font-size: 1rem;
-  padding: 0;
+  padding: 0 0 0.2rem 0;
 }
 
 .active, .collapsible:hover {
-  background-color: #F1EFEF;
+  background-color: #fff;
 }
 
 .content {
@@ -206,14 +207,32 @@ nav li {
 }
 
 #projects ul {
-  list-style: square;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+#projects li {
+  margin-bottom: 1rem;
 }
 
 #projects ul li::marker {
-  color: #FDE767;
+  color: #ffd000;
 }
 
+.arrow.right {
+  border: solid #ffd000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 0.5rem;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
+.rotate {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
 
 /* Skills */
 #skills ul {
@@ -294,7 +313,7 @@ footer p{
   width: 12.5rem;
   height: 12.5rem;
   overflow: hidden;
-  border: solid 0.25rem #FDE767;
+  border: solid 0.25rem #ffd000;
   box-shadow:  0 0 0 0.25rem #000;
   border-radius: 50%;
   margin-top: 2rem;
