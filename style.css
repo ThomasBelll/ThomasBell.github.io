@@ -189,6 +189,7 @@ nav li {
 .collapsible {
   background-color: #fff;
   border: none;
+  cursor: pointer;
   font-size: 1rem;
   padding: 0 0 0.2rem 0;
 }
@@ -199,7 +200,6 @@ nav li {
 
 .content {
   padding: 0 1rem;
-  display: none;
   overflow: hidden;
   background-color: #F1EFEF;
   max-height: 0;
@@ -219,7 +219,7 @@ nav li {
   color: #ffd000;
 }
 
-.arrow.right {
+.arrow {
   border: solid #ffd000;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -227,11 +227,12 @@ nav li {
   margin-right: 0.5rem;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transition: transform 0.2s ease;
 }
 
 .rotate {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 /* Skills */
